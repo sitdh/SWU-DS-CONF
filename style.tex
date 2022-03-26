@@ -1,17 +1,30 @@
-\usepackage[skip=10pt]{parskip}
-
 \newcommand{\abstracttitle}[1]{ %
   \begin{center}
-    \noindent
     \parskip
-    \linespread{1.2pt}
-    \textbf{#1}
+    \linespread{1.2}
+    \textbf{\large #1}
   \end{center} %
 }
 
-\newcommand{\authorAlignment}[1]{ %
+\newcommand{\authorAlignment}[1]{%
   \begin{center}
-    \noindent
-    #1
+    \centering
+    {#1}
   \end{center}
+}
+
+\newcommand{\swusection}[1]{{\noindent\section*{\centering{#1}}}}
+
+\newcommand{\keywordFieldEN}[1]{%
+  \noindent
+  {\textbf{Keywords} : {#1}}%
+  \\
+  \hline%
+}
+
+\newcommand{\keywordFieldTH}[1]{%
+  \noindent
+  {\textbf{คำสำคัญ} : {#1}} %
+  \\
+  \hline%
 }
