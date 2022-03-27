@@ -1,4 +1,9 @@
-\documentclass[14pt]{article}
+\documentclass[14pt,reqno,onesided]{extarticle}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\graphicspath{ {figures/} }
 
 \include{corpus}
 \include{style}
@@ -9,13 +14,20 @@
 \begin{document}
 
 \include{chapters/abstract-th}
-\newpage
 
 \include{chapters/abstract-en}
-\newpage
 
-\include{chapters/introduction}
+\input{chapters/introduction}
 
-\include{intro}
+\input{chapters/methodology}
+
+\input{chapters/result}
+
+\input{chapters/summary}
+
+\input{chapters/acknowledgments}
+
+\input{citation}
+
 
 \end{document}
